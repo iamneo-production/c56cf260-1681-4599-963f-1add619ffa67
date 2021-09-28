@@ -26,8 +26,7 @@ label{
     height:99%;
     border:3px solid rgb(177, 72, 124);
 }
-.loginForm{
-    text-align: center;
+.loginForm,.signupForm{
     border-radius: 2px;
     background-color: white;
     padding: 50px;
