@@ -1,7 +1,8 @@
 package com.examly.springapp;
-import org.springframework.data.repository.CrudRepository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import java.util.List;
-public interface UserRepository extends CrudRepository<User, Long>{
-    List<User> findAll();
+@Repository
+public interface UserRepository extends JpaRepository   <User, String>{
+	public User findByEmail(String email);
 }
