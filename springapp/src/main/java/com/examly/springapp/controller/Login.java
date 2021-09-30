@@ -1,10 +1,12 @@
-package com.examly.springapp;
-
+package com.examly.springapp.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.examly.springapp.model.UserModel;
+
 
 @RestController
 public class Login {
@@ -12,7 +14,7 @@ public class Login {
 	UserRepository repo;
 	
 	@RequestMapping(value="/login", method=RequestMethod.POST)
-	public User home(@RequestBody User user) {
+	public UserModel home(@RequestBody UserModel user) {
 		String email = user.getEmail();
 		if(repo.findByEmail(email) == null) {
 			repo.save(user);
