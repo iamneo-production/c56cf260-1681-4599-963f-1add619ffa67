@@ -2,17 +2,14 @@ package com.examly.springapp.model;
 
 
 import java.util.Arrays;
-import java.util.UUID;
+import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -28,6 +25,9 @@ public class PostModel {
 	@Column(name="user_id", nullable = false)
 	private String userId;
 	
+	@Column(name="user_name", nullable = false)
+	private String userName;
+	
     @Column(nullable = false, length = 40)
     private String imageName;
     
@@ -41,15 +41,6 @@ public class PostModel {
     @Column(nullable = true, length = 250)
     private String imageDescription;
     
-    @OneToOne
-    private CommentModel comments;
-    
-    public CommentModel getComments() {
-		return comments;
-	}
-	public void setComments(CommentModel comments) {
-		this.comments = comments;
-	}
 	public String getImageDescription() {
 		return imageDescription;
 	}
@@ -66,11 +57,12 @@ public class PostModel {
 	public PostModel() {
     	super();
     }
-    public PostModel(String imageName, String imageTag, byte[] bs, String userId) {
+    public PostModel(String imageName, String imageTag, byte[] bs, String userId, String userName) {
         	this.imageName = imageName;
         	this.imageTag = imageTag;
 			this.image = bs;
 			this.userId = userId;
+			this.userName = userName;
     }
 	public String getImageId() {
 		return imageId;
@@ -104,6 +96,13 @@ public class PostModel {
 		this.imageTag = imageTag;
 	}
 
+	
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 	@Override
 	public String toString() {
 		return "PostModel [imageId=" + imageId + ", imageName=" + imageName + ", image=" + Arrays.toString(image)

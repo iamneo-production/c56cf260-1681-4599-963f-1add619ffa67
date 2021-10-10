@@ -24,9 +24,14 @@ public class PostService implements UserDetailsService {
 	@Autowired
 	private PostRepository postRepo;
 
-	public PostModel store(MultipartFile file, String description, String userId) throws IOException {
+	public boolean existsPost(String postId) {
+		if(postRepo.existsById(postId))
+			return true;
+		return false;
+	}
+	public PostModel store(MultipartFile file, String description, String userId, String username) throws IOException {
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-		PostModel FileDB = new PostModel(fileName, file.getContentType(), file.getBytes(), userId);
+		PostModel FileDB = new PostModel(fileName, file.getContentType(), file.getBytes(), userId, username);
 		FileDB.setImageDescription(description);
 		return postRepo.save(FileDB);
 	}
