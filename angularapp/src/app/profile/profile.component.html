@@ -1,0 +1,109 @@
+<head>
+    <title>Profile || PhotoFramed</title>
+    <link href="profile.component.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="outbox" id="userHome">
+    <div class="heading">
+        <h2>PhotoFramed</h2>
+    </div><br>
+    <div class="profile_body">
+        <div class="profile_header" style="float:left;">
+            <img src="" alt="Image here" class="img_container">&nbsp;<h3 id="userName[]"> Username</h3>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="profile_header" style="float:right;">
+            <div class="profile_followers" id="likeCount[]">
+                <p>Posts</p>
+                <h4>0</h4>
+            </div>
+            <div class="profile_followers" id="viewComment[]">
+                <p>Followers</p>
+                <h4>0</h4>
+            </div>
+            <div class="profile_followers" id="toShare[]">
+                <p>Following</p>
+                <h4>0</h4>
+            </div>
+        </div>
+        <br/><hr/>
+        <div class="tabset">
+          <!-- Tab 1 -->
+          <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+          <label for="tab1">Photos</label>
+          <!-- Tab 2 -->
+          <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+          <label for="tab2">Videos</label>
+          <!-- Tab 3 -->
+          <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+          <label for="tab3">Tags</label>
+          
+          <div class="tab-panels">
+            <section id="marzen" class="tab-panel">
+              <div class="image_holder" id="grid[]">
+                  <img src="" alt="Image here" class="main_img">
+              </div>
+              <div class="space"></div>
+              <div class="image_holder" id="grid[]">
+                  <img src="" alt="Image here" class="main_img">
+              </div>
+              <div class="space"></div>
+              <div class="image_holder" id="grid[]">
+                  <img src="" alt="Image here" class="main_img">
+              </div>
+              <br>
+              <br>
+          </section>
+            <section id="rauchbier" class="tab-panel">
+              <div class="image_holder" id="grid[]">
+                <video width="100%" height="100%" style="border-radius: 10px;" controls>
+                  <source src="" type="video/mp4">
+                  <source src="" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="space"></div>
+              <div class="image_holder" id="grid[]">
+                <video width="100%" height="100%" style="border-radius: 10px;" controls>
+                  <source src="" type="video/mp4">
+                  <source src="" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="space"></div>
+              <div class="image_holder" id="grid[]">
+                <video width="100%" height="100%" style="border-radius: 10px;" controls>
+                  <source src="" type="video/mp4">
+                  <source src="" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <br>
+              <br>
+            </section>
+            <section id="dunkles" class="tab-panel">
+              <div class="image_holder" id="grid[]">
+                <video width="100%" height="100%" style="border-radius: 10px;" controls>
+                  <source src="" type="video/mp4">
+                  <source src="" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="space"></div>
+              <div class="image_holder" id="grid[]">
+                  <img src="" alt="Image here" class="main_img">
+              </div>
+              <div class="space"></div>
+              <div class="image_holder" id="grid[]">
+                  <img src="" alt="Image here" class="main_img">
+              </div>
+            </section>
+          </div>
+          
+        </div>
+        <hr/>
+    </div>
+</div>
+</body>
