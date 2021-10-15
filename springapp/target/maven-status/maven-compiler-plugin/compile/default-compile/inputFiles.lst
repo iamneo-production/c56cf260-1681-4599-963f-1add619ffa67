@@ -2,6 +2,8 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/JwtUtil.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/LoginRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/model/UserModel.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/response/SignupRequest.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/response/GetComment.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/UserRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/repository/PostRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/SignupController.java
@@ -12,6 +14,7 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/response/ResponseFile.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/LoginService.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/JWTAuthorizationFilter.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/UserController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/response/ResponseMessage.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/CommentService.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/CustomAuthenticationEntryPoint.java
@@ -22,5 +25,6 @@
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/PostController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/CommentController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/model/LoginModel.java
+/home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/response/GetUser.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/controller/LoginController.java
 /home/coder/project/workspace/springapp/src/main/java/com/examly/springapp/service/UserService.java
