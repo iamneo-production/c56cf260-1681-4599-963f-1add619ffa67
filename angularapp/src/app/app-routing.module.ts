@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterationComponent } from './registeration/registeration.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { AddimageComponent } from './addimage/addimage.component';
+import { PostComponent } from './post/post.component';
+
 
 
 const routes: Routes = [
@@ -18,8 +19,9 @@ const routes: Routes = [
     path:"home",component:HomeComponent
   },
   {
-    path:"adddimage",component:AddimageComponent
+    path:"posted",component:PostComponent
   }
+  
 ];
 
 @NgModule({

@@ -10,10 +10,10 @@ export class RegistrationService {
 
   constructor(private _http: HttpClient) { }
   public registerUserfromRemote(user :User):Observable<any> {
-    return this._http.post<any>("http://localhost:8080/signup",user);
+    return this._http.post<any>("https://8080-ebaffbeecfaeccbfdfbcfddceeaeaaacfc.examlyiopb.examly.io/signup",user);
   }
   public loginUserfromRemote(user :User):Observable<any> {
-    return this._http.post<any>("http://localhost:8080/login",user)
+    return this._http.post<any>("https://8080-ebaffbeecfaeccbfdfbcfddceeaeaaacfc.examlyiopb.examly.io/login",user)
 
     
   }

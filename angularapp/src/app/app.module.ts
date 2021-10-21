@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { RegisterationComponent } from './registeration/registeration.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     RegisterationComponent,
     LoginComponent,
+    HomeComponent,
+    PostComponent,
    
   ],
   imports: [
