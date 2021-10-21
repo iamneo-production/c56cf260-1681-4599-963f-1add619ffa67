@@ -53,7 +53,6 @@ public class UserController {
 			message.setStatus(400);
 			message.setMessage("User Not found");
 			return new ResponseEntity <> (message, HttpStatus.BAD_REQUEST);
-			
 		}
 	}
 	
